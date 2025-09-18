@@ -1,402 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indoor Pet Activities That Burn Energy Without Draining Yours</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-.navbar {
-  display: flex;           /* enable flexbox */
-  justify-content: space-between; /* spread logo and menu apart */
-  align-items: center;     /* vertically center items */
-  padding: 0 20px;         /* optional spacing */
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indoor Pet Activities That Burn Energy Without Draining Yours</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-.menu {
-  display: flex;           /* make the menu items horizontal */
-  list-style: none;        /* remove bullets */
-  gap: 20px;               /* spacing between items */
-}
+    body {
+      font-family: "Georgia", serif;
+      line-height: 1.8;
+      color: #2c3e50;
+      background: #ffffff;
+    }
 
-.menu a {
-  text-decoration: none;   /* remove underline */
-  color: #333;             /* set link color */
-  font-weight: 500;
-}
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #eaeaea;
+      background: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
 
-        body {
-            font-family: 'Georgia', serif;
-            line-height: 1.6;
-            color: #2c3e50;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-            min-height: 100vh;
-            padding: 20px 0;
-        }
+    .logo {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #111;
+    }
 
-        .container {
-            max-width: 850px;
-            margin: 0 auto;
-            padding: 30px;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
+    .menu {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
 
-        .header {
-            text-align: center;
-            margin-bottom: 50px;
-            padding: 40px 20px;
-            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
-            color: #2c3e50;
-            border-radius: 20px;
-            margin: -30px -30px 50px -30px;
-            position: relative;
-            overflow: hidden;
-        }
+    .menu a {
+      text-decoration: none;
+      color: #555;
+      font-weight: 500;
+    }
 
-        .header::before {
-            content: "";
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 50%);
-            animation: float 6s ease-in-out infinite;
-        }
+    .menu a:hover {
+      color: #000;
+    }
 
-        .header h1 {
-            font-size: 2.8em;
-            margin-bottom: 15px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-            position: relative;
-            z-index: 2;
-        }
+    /* Main container */
+    .container {
+      max-width: 750px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
 
-        .header .subtitle {
-            font-size: 1.3em;
-            opacity: 0.8;
-            font-style: italic;
-            position: relative;
-            z-index: 2;
-        }
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
 
-        @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(180deg); }
-        }
+    .header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #111;
+      font-weight: 700;
+    }
 
-        .intro {
-            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
-            padding: 30px;
-            border-radius: 15px;
-            margin-bottom: 40px;
-            border: 2px solid rgba(102, 126, 234, 0.2);
-            position: relative;
-        }
+    .subtitle {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #666;
+    }
 
-        .intro::before {
-            content: "🏠";
-            position: absolute;
-            top: -15px;
-            left: 30px;
-            background: white;
-            padding: 5px 10px;
-            border-radius: 20px;
-            font-size: 1.5em;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
+    /* Typography */
+    h2 {
+      font-size: 1.8rem;
+      margin: 2.5rem 0 1rem 0;
+      color: #111;
+      font-weight: 600;
+    }
 
-        .intro p {
-            font-size: 1.15em;
-            color: #2c3e50;
-            margin-bottom: 20px;
-        }
+    h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.8rem;
+      color: #333;
+    }
 
-        h2 {
-            color: #667eea;
-            font-size: 2em;
-            margin: 50px 0 25px 0;
-            padding: 20px 0 15px 0;
-            border-bottom: 3px solid transparent;
-            background: linear-gradient(90deg, #667eea, #764ba2);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            position: relative;
-        }
+    p {
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+      color: #333;
+      text-align: justify;
+    }
 
-        h2::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 60px;
-            height: 3px;
-            background: linear-gradient(90deg, #667eea, #764ba2);
-            border-radius: 2px;
-        }
+    strong {
+      color: #000;
+    }
 
-        h2:before {
-            content: "🎯";
-            margin-right: 15px;
-            font-size: 0.8em;
-            -webkit-text-fill-color: initial;
-        }
+    /* Blog cards/sections */
+    .activity-card,
+    .tips-section,
+    .quiet-note,
+    .conclusion {
+      background: #fafafa;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin: 2rem 0;
+      border: 1px solid #eaeaea;
+    }
 
-        p {
-            margin-bottom: 25px;
-            font-size: 1.1em;
-            text-align: justify;
-            color: #34495e;
-        }
+    .activity-card h3::before {
+      content: "💡 ";
+    }
 
-        .activity-card {
-            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
-            padding: 25px;
-            border-radius: 15px;
-            margin: 30px 0;
-            border-left: 5px solid #ff9a9e;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            transform: translateX(0);
-            transition: transform 0.3s ease;
-        }
+    .tips-section h3::before {
+      content: "🌿 ";
+    }
 
-        .activity-card:hover {
-            transform: translateX(10px);
-        }
+    .conclusion {
+      text-align: center;
+    }
 
-        .activity-card h3 {
-            color: #e17055;
-            margin-bottom: 15px;
-            font-size: 1.4em;
-            display: flex;
-            align-items: center;
-        }
+    .conclusion h3::before {
+      content: "🎯 ";
+    }
 
-        .activity-card h3::before {
-            content: "💡";
-            margin-right: 10px;
-            font-size: 1.2em;
-        }
+    .pet-icons {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+    }
 
-        .tips-section {
-            background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);
-            border-radius: 15px;
-            padding: 25px;
-            margin: 30px 0;
-            border: 2px solid rgba(210, 153, 194, 0.3);
-        }
+    /* Energy meter */
+    .energy-meter {
+      display: flex;
+      align-items: center;
+      margin: 1.5rem 0;
+    }
 
-        .tips-section h3 {
-            color: #8e44ad;
-            margin-bottom: 20px;
-            font-size: 1.5em;
-            text-align: center;
-        }
+    .energy-meter .label {
+      font-weight: bold;
+      margin-right: 10px;
+      color: #333;
+    }
 
-        .energy-meter {
-            display: flex;
-            align-items: center;
-            margin: 20px 0;
-            padding: 15px;
-            background: rgba(255, 255, 255, 0.7);
-            border-radius: 10px;
-        }
+    .energy-bar {
+      flex: 1;
+      height: 10px;
+      background: #eee;
+      border-radius: 5px;
+      overflow: hidden;
+    }
 
-        .energy-meter .label {
-            font-weight: bold;
-            margin-right: 15px;
-            color: #2c3e50;
-        }
+    .energy-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #00b894, #fdcb6e, #e17055);
+      border-radius: 5px;
+    }
 
-        .energy-bar {
-            flex: 1;
-            height: 10px;
-            background: #ecf0f1;
-            border-radius: 5px;
-            overflow: hidden;
-        }
+    /* Footer */
+    footer {
+      border-top: 1px solid #eaeaea;
+      padding: 2rem 1rem;
+      background: #fff;
+      margin-top: 3rem;
+    }
 
-        .energy-fill {
-            height: 100%;
-            background: linear-gradient(90deg, #00b894, #fdcb6e, #e17055);
-            border-radius: 5px;
-            animation: pulse 2s infinite;
-        }
+    .author-bio {
+      max-width: 750px;
+      margin: 0 auto;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
 
-        @keyframes pulse {
-            0% { opacity: 0.8; }
-            50% { opacity: 1; }
-            100% { opacity: 0.8; }
-        }
+    .author-bio img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
 
-        .section-divider {
-            height: 4px;
-            background: linear-gradient(90deg, #667eea, #764ba2, #f093fb, #667eea);
-            margin: 50px 0;
-            border-radius: 2px;
-            background-size: 200% 200%;
-            animation: gradient 3s ease infinite;
-        }
+    .author-text {
+      color: #555;
+    }
 
-        @keyframes gradient {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
+    .related-posts {
+      max-width: 750px;
+      margin: 2rem auto 0 auto;
+    }
 
-        .conclusion {
-            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
-            padding: 30px;
-            border-radius: 15px;
-            text-align: center;
-            margin-top: 50px;
-            border: 2px solid rgba(102, 126, 234, 0.2);
-        }
+    .related-posts h3 {
+      margin-bottom: 1rem;
+    }
 
-        .conclusion h3 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-            font-size: 1.6em;
-        }
+    .related-posts ul {
+      list-style: none;
+      padding: 0;
+    }
 
-        .pet-icons {
-            font-size: 2em;
-            margin: 20px 0;
-            letter-spacing: 15px;
-        }
+    .related-posts li {
+      margin-bottom: 0.8rem;
+    }
 
-        .quiet-note {
-            background: linear-gradient(135deg, #c3cfe2 0%, #c3cfe2 100%);
-            padding: 25px;
-            border-radius: 15px;
-            margin: 30px 0;
-            border-left: 5px solid #74b9ff;
-            font-style: italic;
-        }
+    .related-posts a {
+      text-decoration: none;
+      color: #0077cc;
+    }
 
-        @media (max-width: 768px) {
-            .container {
-                margin: 10px;
-                padding: 20px;
-            }
-            
-            .header h1 {
-                font-size: 2.2em;
-            }
-            
-            .header {
-                margin: -20px -20px 40px -20px;
-                padding: 30px 15px;
-            }
+    .related-posts a:hover {
+      text-decoration: underline;
+    }
 
-            .activity-card:hover {
-                transform: none;
-            }
-        }
-    </style>
-        <nav class="navbar">
-    <h1 class="logo">      </h1>
-      <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <!-- <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#contact">Contact</a></li> -->
-        
-      </ul>
-
-      
-
-
-    </nav>
+    /* Responsive */
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      .author-bio {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        
-        <div class="header">
-            <h1>Indoor Pet Activities That Burn Energy Without Draining Yours</h1>
-            <div class="subtitle">Smart solutions for active pets and busy pet parents</div>
-        </div>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Pet Blog</div>
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+    </ul>
+  </nav>
 
-        <div class="intro">
-            <p>Some pets start the day ready to go. A noisy toy in their mouth, pacing near the door, or full-speed hallway sprints. These behaviors are common when dogs or cats don't have a good way to release energy. Meanwhile, you might be dealing with low energy, a busy schedule, or a gloomy weather forecast.</p>
-            
-            <p>Even in those quiet moments, animals still need stimulation. If they don't get it, their boredom often shows up in chewed corners, clawed cushions, or endless whining. The good thing is, they don't need high-energy play to feel engaged. What they really need is structure, novelty, and a small dose of daily challenge.</p>
-
-            <div class="energy-meter">
-                <span class="label">Mental Stimulation Impact:</span>
-                <div class="energy-bar">
-                    <div class="energy-fill" style="width: 85%;"></div>
-                </div>
-            </div>
-        </div>
-
-        <p><strong>Many pets benefit more from mental focus than physical activity.</strong> When they sniff, search, figure something out, or play with intention, they calm down faster and stay settled longer. With the right activities, it's possible to offer that kind of experience without wearing yourself out. The point isn't to wear out your pet but to give them something meaningful to do that satisfies their instincts, builds confidence, and creates balance in the home.</p>
-
-        <h2>Feeding Time as Focused Play</h2>
-        <p>Mealtime can be a built-in moment for mental engagement, not just a time to eat. Using a snuffle mat, treat ball, or food puzzle turns a quick meal into a longer experience. These tools encourage natural foraging and problem-solving behaviors, especially for dogs. Instead of gulping food from a bowl, your pet has to think about each bite. This kind of interaction taps into their senses and leaves them more mentally satisfied.</p>
-
-        <div class="activity-card">
-            <h3>For Cats: Simple Hunting Games</h3>
-            <p>Scattering dry food around a room or tucking it into folds of a towel can create a simple hunting game. The key is to keep things accessible but not obvious. Even switching up the location of a food toy adds variety.</p>
-        </div>
-
-        <p>Many puzzle-based feeding tools are available in pet stores or online, and interactive toys for dogs can be easily adapted for cats. Start simple, then slowly build difficulty as your pet gains confidence.</p>
-
-        <div class="section-divider"></div>
-
-        <h2>Using Scent and Space to Invite Calm Activity</h2>
-        <p>Dogs and cats understand the world through smell. Encouraging them to use their nose indoors can ease anxiety and reduce excess energy. One way to do this is by creating scent trails with small treats placed under furniture edges, along walls, or inside paper towel rolls. You can also rotate toys that carry different scents or place familiar-smelling objects in new areas of the home to prompt curiosity.</p>
-
-        <div class="tips-section">
-            <h3>🌿 Scent Enrichment Tips</h3>
-            <p><strong>For Cats:</strong> Cats may be more selective, but they still enjoy gentle scent challenges. Soft herbs like silvervine or dried valerian, safely stored in pouches or fabric toys, can spark new interest.</p>
-            <p><strong>The Goal:</strong> The goal isn't to overstimulate but to activate your pet's natural tracking instincts. As they search, sniff, and explore at their own pace, they settle into a focused rhythm that doesn't require any running or chasing on your part.</p>
-        </div>
-
-        <h2>Encouraging Self-Led Problem Solving</h2>
-        <p>A pet doesn't need flashy gear to feel engaged. A towel with a toy hidden inside, a box with light flaps, or even a slow-rolling ball can offer quiet stimulation. What matters most is giving them a clear task and letting them complete it without interruption. Some pets respond well to short waiting games or hide-and-seek activities that center on finding a reward.</p>
-
-        <div class="activity-card">
-            <h3>Building Confidence Through Structure</h3>
-            <p>Even short exercises can build long-term confidence. Asking your dog to return to a mat or guiding your cat to a perch for a reward creates structure. Instead of chasing you for attention, they begin to expect these check-ins as part of the day.</p>
-        </div>
-
-        <div class="section-divider"></div>
-
-        <h2>Letting the Environment Do Some of the Work</h2>
-        <p>Sometimes, the best stimulation doesn't involve play at all. A soft perch near a window can offer hours of interest for a cat. Dogs often settle better when they can observe quiet motion outdoors, like swaying trees or distant movement on the street. Placing a blanket or cushion near a glass door or open curtain gives them a passive experience that feels engaging without being loud or chaotic.</p>
-
-        <div class="tips-section">
-            <h3>🪟 Environmental Enrichment</h3>
-            <p>Not every pet has access to a scenic view, but gentle background sound or light scent cues can still provide sensory variety. You might rotate toys with different textures or use recorded sounds they find comforting. If your pet already has a favorite spot in the house, reinforcing it with a familiar blanket or shirt that carries your scent can turn it into a grounding space.</p>
-        </div>
-
-        <p><strong>Window shelves for cats</strong> are one simple way to give them more visual range indoors, especially in smaller spaces.</p>
-
-        <h2>Ending on a Quiet Note</h2>
-        <div class="quiet-note">
-            <p>After even light activity, pets benefit from clear signals that it's time to settle. A shift in lighting, a phrase they know, or a familiar object like a chew toy or calming mat can guide this transition. When the pattern repeats each day, animals begin to wind down without being asked.</p>
-        </div>
-
-        <p>This creates a rhythm where stimulation is followed by stillness, without tension or confusion. Some pets prefer to be near their person during recovery time. Others seek out a quiet corner. Knowing your pet's habits makes it easier to support their return to calm.</p>
-
-        <div class="conclusion">
-            <h3>🎯 The Perfect Balance</h3>
-            <div class="pet-icons">🐕🐱🏠💤</div>
-            <p>You don't have to fill every minute with play. Offering a few small, focused moments each day can keep energy balanced, behavior smooth, and the home peaceful for everyone in it.</p>
-        </div>
+  <!-- Blog container -->
+  <div class="container">
+    <div class="header">
+      <h1>Indoor Pet Activities That Burn Energy Without Draining Yours</h1>
+      <div class="subtitle">Smart solutions for active pets and busy pet parents</div>
     </div>
+
+    <p>Some pets start the day ready to go. A noisy toy in their mouth, pacing near the door, or full-speed hallway sprints. These behaviors are common when dogs or cats don't have a good way to release energy...</p>
+
+    <div class="energy-meter">
+      <span class="label">Mental Stimulation Impact:</span>
+      <div class="energy-bar">
+        <div class="energy-fill" style="width: 85%;"></div>
+      </div>
+    </div>
+
+    <p><strong>Many pets benefit more from mental focus than physical activity.</strong> When they sniff, search, figure something out, or play with intention, they calm down faster and stay settled longer.</p>
+
+    <h2>Feeding Time as Focused Play</h2>
+    <p>Mealtime can be a built-in moment for mental engagement, not just a time to eat...</p>
+
+    <div class="activity-card">
+      <h3>For Cats: Simple Hunting Games</h3>
+      <p>Scattering dry food around a room or tucking it into folds of a towel can create a simple hunting game.</p>
+    </div>
+
+    <h2>Using Scent and Space to Invite Calm Activity</h2>
+    <p>Dogs and cats understand the world through smell. Encouraging them to use their nose indoors can ease anxiety...</p>
+
+    <div class="tips-section">
+      <h3>Scent Enrichment Tips</h3>
+      <p><strong>For Cats:</strong> Cats may be more selective, but they still enjoy gentle scent challenges.</p>
+    </div>
+
+    <h2>Encouraging Self-Led Problem Solving</h2>
+    <p>A pet doesn't need flashy gear to feel engaged. A towel with a toy hidden inside, a box with light flaps...</p>
+
+    <div class="activity-card">
+      <h3>Building Confidence Through Structure</h3>
+      <p>Even short exercises can build long-term confidence. Asking your dog to return to a mat or guiding your cat...</p>
+    </div>
+
+    <h2>Letting the Environment Do Some of the Work</h2>
+    <p>Sometimes, the best stimulation doesn't involve play at all. A soft perch near a window can offer hours of interest...</p>
+
+    <div class="tips-section">
+      <h3>Environmental Enrichment</h3>
+      <p>Not every pet has access to a scenic view, but gentle background sound or light scent cues can still provide sensory variety.</p>
+    </div>
+
+    <h2>Ending on a Quiet Note</h2>
+    <div class="quiet-note">
+      <p>After even light activity, pets benefit from clear signals that it's time to settle...</p>
+    </div>
+
+    <div class="conclusion">
+      <h3>The Perfect Balance</h3>
+      <div class="pet-icons">🐕🐱🏠💤</div>
+      <p>You don't have to fill every minute with play. Offering a few small, focused moments each day keeps energy balanced...</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="author-bio">
+      <img src="https://via.placeholder.com/60" alt="Author">
+      <div class="author-text">
+        <strong>Written by Jane Doe</strong>
+        <p>Pet lover, trainer, and writer helping busy owners create calm, happy homes for their animals.</p>
+      </div>
+    </div>
+
+    <div class="related-posts">
+      <h3>Related Posts</h3>
+      <ul>
+        <li><a href="#">5 Brain Games to Keep Your Dog Busy Indoors</a></li>
+        <li><a href="#">The Best Cat Toys for Independent Play</a></li>
+        <li><a href="#">How to Create a Calm Routine for Your Pet</a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
