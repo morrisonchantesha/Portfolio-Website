@@ -10,7 +10,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.7;
@@ -18,13 +18,13 @@
             background: #ffffff;
             min-height: 100vh;
         }
-        
+
         .container {
             max-width: 900px;
             margin: 0 auto;
             padding: 20px;
         }
-        
+
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -56,7 +56,7 @@
         .menu a:hover {
             color: #e67e22;
         }
-        
+
         .blog-card {
             background: #ffffff;
             border-radius: 12px;
@@ -64,32 +64,32 @@
             overflow: hidden;
             margin: 20px 0;
         }
-        
+
         .header {
             background: linear-gradient(135deg, #e67e22 0%, #d35400 100%);
             color: white;
             padding: 60px 40px;
             text-align: center;
         }
-        
+
         .header h1 {
             font-size: 2.8rem;
             margin-bottom: 15px;
             font-weight: 700;
             line-height: 1.2;
         }
-        
+
         .header .subtitle {
             font-size: 1.2rem;
             opacity: 0.95;
             font-weight: 300;
             margin-bottom: 20px;
         }
-        
+
         .content {
             padding: 50px 40px;
         }
-        
+
         .intro {
             font-size: 1.2rem;
             color: #34495e;
@@ -101,12 +101,12 @@
             line-height: 1.8;
             text-align: justify;
         }
-        
+
         .section {
             margin: 40px 0;
             padding: 0;
         }
-        
+
         .section h2 {
             color: #2c3e50;
             font-size: 2rem;
@@ -117,12 +117,12 @@
             gap: 12px;
             line-height: 1.3;
         }
-        
+
         .section h2::before {
             content: '🐾';
             font-size: 1.8rem;
         }
-        
+
         .section p {
             margin-bottom: 20px;
             text-align: justify;
@@ -130,7 +130,7 @@
             font-size: 1.1rem;
             line-height: 1.8;
         }
-        
+
         .highlight {
             background: #fff3cd;
             padding: 25px;
@@ -138,12 +138,12 @@
             border-left: 4px solid #ffc107;
             margin: 25px 0;
         }
-        
+
         .highlight strong {
             color: #856404;
             font-weight: 600;
         }
-        
+
         .tip-box {
             background: #d4edda;
             padding: 25px;
@@ -151,19 +151,19 @@
             margin: 30px 0;
             border-left: 4px solid #28a745;
         }
-        
+
         .tip-box h3 {
             color: #155724;
             margin-bottom: 12px;
             font-size: 1.3rem;
             font-weight: 600;
         }
-        
+
         .tip-box p {
             color: #155724;
             margin-bottom: 0;
         }
-        
+
         .warning-box {
             background: #f8d7da;
             padding: 25px;
@@ -171,19 +171,19 @@
             margin: 30px 0;
             border-left: 4px solid #dc3545;
         }
-        
+
         .warning-box h3 {
             color: #721c24;
             margin-bottom: 12px;
             font-size: 1.3rem;
             font-weight: 600;
         }
-        
+
         .warning-box p {
             color: #721c24;
             margin-bottom: 0;
         }
-        
+
         .footer {
             background: #2c3e50;
             color: white;
@@ -191,19 +191,19 @@
             text-align: center;
             border-radius: 0 0 12px 12px;
         }
-        
+
         .footer p {
             margin: 8px 0;
             font-size: 1.1rem;
             line-height: 1.6;
         }
-        
+
         .pet-emoji {
             font-size: 2.2rem;
             margin: 0 8px;
             display: inline-block;
         }
-        
+
         .reading-progress {
             position: fixed;
             top: 0;
@@ -214,71 +214,71 @@
             z-index: 1000;
             transition: width 0.1s ease;
         }
-        
+
         @media (max-width: 768px) {
             .container {
                 padding: 15px;
             }
-            
+
             .header {
                 padding: 40px 25px;
             }
-            
+
             .header h1 {
                 font-size: 2.2rem;
             }
-            
+
             .content {
                 padding: 30px 25px;
             }
-            
+
             .intro {
                 padding: 20px;
                 font-size: 1.1rem;
             }
-            
+
             .section h2 {
                 font-size: 1.7rem;
             }
-            
+
             .section p {
                 font-size: 1rem;
             }
-            
+
             .menu {
                 gap: 20px;
             }
-            
+
             .navbar {
                 flex-direction: column;
                 gap: 15px;
                 text-align: center;
             }
         }
-        
+
         /* Enhanced readability */
         h1, h2, h3 {
             text-rendering: optimizeLegibility;
         }
-        
+
         p {
             text-rendering: optimizeSpeed;
         }
-        
+
         /* Smooth animations */
         .section {
             opacity: 0;
             transform: translateY(20px);
             animation: fadeInUp 0.6s ease forwards;
         }
-        
-        .section:nth-child(1) { animation-delay: 0.1s; }
-        .section:nth-child(2) { animation-delay: 0.2s; }
-        .section:nth-child(3) { animation-delay: 0.3s; }
-        .section:nth-child(4) { animation-delay: 0.4s; }
-        .section:nth-child(5) { animation-delay: 0.5s; }
-        .section:nth-child(6) { animation-delay: 0.6s; }
-        
+
+        .section:nth-of-type(1) { animation-delay: 0.1s; }
+        .section:nth-of-type(2) { animation-delay: 0.2s; }
+        .section:nth-of-type(3) { animation-delay: 0.3s; }
+        .section:nth-of-type(4) { animation-delay: 0.4s; }
+        .section:nth-of-type(5) { animation-delay: 0.5s; }
+        .section:nth-of-type(6) { animation-delay: 0.6s; }
+
         @keyframes fadeInUp {
             to {
                 opacity: 1;
@@ -303,7 +303,7 @@
 
         <div class="blog-card">
             <div class="header">
-                <h1>Managing Pet Jealousy in Multi-Pet Households</h1>
+                <h1>How to Manage Pet Jealousy in a Multi-Pet Household</h1>
                 <p class="subtitle">Creating harmony when your furry family competes for attention</p>
                 <div style="margin-top: 25px;">
                     <span class="pet-emoji">🐶</span>
@@ -315,35 +315,36 @@
             
             <div class="content">
                 <div class="intro">
-                    In homes with multiple pets, it can feel like managing a daily talent show. One dog insists on being first to the door, the cat plants herself right on top of the laundry pile, and the parrot belts out songs whenever someone else gets attention. While this behavior may seem charming, it can also create real tension when animals compete for love and space.
+                    <p>In homes with more than one pet, it can feel like a daily talent show. One dog insists on being first to the door, the cat plants herself right on top of the laundry pile, and the parrot belts out songs whenever someone else gets attention. To most pet parents, the behavior is charming, but it can also come with real tension if animals are competing for love and space. While it may seem like simple silliness, this quiet battle for the spotlight often reflects deeper social dynamics between pets.</p>
+                    <p>Understanding how and why pets compete is the first step to building a more peaceful household. Some pets nudge their way forward. Others retreat quietly. Both reactions matter. Once the roots of competition are understood, the next step is learning how it shows up day to day. By noticing the early signs of cuteness rivalry and using practical solutions rooted in animal behavior, owners can help each pet feel seen, valued, and secure without turning their home into a never-ending audition for affection.</p>
                 </div>
                 
                 <div class="section">
                     <h2>Why Pets Compete for the Spotlight</h2>
-                    <p>In multi-pet households, animals often develop subtle habits to earn human attention. Pets may try to secure the comfiest lap, be the first to the food bowl, or demand praise the moment another animal receives it. Dogs tend to reflect social hierarchies and may compete for rank, while cats often show territorial preferences and assertiveness through routines.</p>
+                    <p>In multi-pet households, animals often develop subtle habits to earn human attention. Pets may try to secure the comfiest lap, be the first to the food bowl, or demand praise the moment another animal receives it. Dogs tend to reflect social hierarchies and may compete for rank, while cats often show territorial preferences and assertiveness through routines. When one pet consistently gets more treats, cuddles, or praise, others may feel overlooked and begin to act out in their own ways.</p>
                     
                     <div class="highlight">
-                        <strong>Key Insight:</strong> This behavior doesn't always stem from bad manners. Newly adopted pets may need extra attention to adjust, while older or quieter animals might start to withdraw if they feel ignored.
+                        <strong>Key Insight:</strong> This behavior doesn’t always stem from bad manners. Newly adopted pets may need extra attention to adjust, while older or quieter animals might start to withdraw if they feel ignored.
                     </div>
                     
-                    <p>Differences in age, species, or past trauma can create imbalances in how affection is shared or interpreted. Even big changes like introducing pets to a new baby can create shifts in routine that cause competition in pets that once coexisted peacefully.</p>
+                    <p>Differences in age, species, or past trauma can create imbalances in how affection is shared or interpreted. Introducing a new pet without a careful plan may also trigger possessiveness. Even big changes like introducing pets to a new baby can create shifts in routine that cause competition in pets that once coexisted peacefully. Once owners understand what drives these behaviors, it becomes easier to notice when subtle signs of rivalry start showing up at home.</p>
                 </div>
                 
                 <div class="section">
-                    <h2>Spotting 'Cuteness Rivalry' Early</h2>
-                    <p>Pet rivalry isn't always obvious. One dog might always place himself between the human and another animal. A cat may aggressively claim the top of the couch after the dog gets off it. Behaviors like exaggerated vocalizations, possessive cuddling, or hovering near food and toys can signal that a pet is feeling insecure or left out.</p>
+                    <h2>Spotting ‘Cuteness Rivalry’ Early</h2>
+                    <p>Pet rivalry isn’t always obvious. One dog might always place himself between the human and another animal. A cat may aggressively claim the top of the couch after the dog gets off it. Behaviors like exaggerated vocalizations, possessive cuddling, or hovering near food and toys can signal that a pet is feeling insecure or left out. Subtle signs, like attention-seeking after another pet gets praised, are often early red flags.</p>
                     
                     <div class="tip-box">
                         <h3>🚨 Early Warning Signs</h3>
-                        <p>Watch for attention-seeking after another pet gets praised, changes in posture, clingy behavior, or avoidance patterns. A rabbit that hops into every photo may seem confident, but if another pet is being pushed away repeatedly, it can become a source of stress.</p>
+                        <p>These behaviors often come across as cute, so they’re easy to overlook. A rabbit that hops into every photo may seem confident, but if another pet is being pushed away repeatedly, it can become a source of stress. Changes in posture, clingy behavior, or avoidance patterns can point to jealousy or anxiety, such as a cat suddenly hiding under furniture when another pet is cuddled. Recognizing the signs of jealousy early allows owners to reset the dynamic before competition becomes the norm.</p>
                     </div>
                 </div>
                 
                 <div class="section">
                     <h2>Fairness Strategies That Actually Work</h2>
-                    <p>Creating fairness starts with routine. Pets thrive on structure and knowing their time for interaction is coming. This could mean giving the dog a dedicated morning walk, brushing the cat in a quiet room at night, or setting time aside to gently handle a shy guinea pig.</p>
+                    <p>Creating fairness starts with routine. Pets thrive on structure and knowing their time for interaction is coming. This could mean giving the dog a dedicated morning walk, brushing the cat in a quiet room at night, or setting time aside to gently handle a shy guinea pig. Structured bonding helps prevent insecurity, especially when one pet tends to dominate shared moments. If one dog is feeling left out during daily activities, scheduled attention helps reinforce security for everyone.</p>
                     
-                    <p>Group play works best when all pets feel included. Toys that promote parallel engagement can help, especially when animals are likely to compete for a single object. Puzzle feeders and scent mats reduce friction while offering mental stimulation.</p>
+                    <p>Group play works best when all pets feel included. Toys that promote parallel engagement can help, especially when animals are likely to compete for a single object. Puzzle feeders and scent mats reduce friction while offering mental stimulation. The best toys for multi-pet households often allow independent or side-by-side use, which decreases the chances of conflict. Rewarding calm behavior and taking turns during training teaches pets that waiting patiently leads to good things.</p>
                     
                     <div class="highlight">
                         <strong>Pro Tip:</strong> The best toys for multi-pet households often allow independent or side-by-side use, which decreases the chances of conflict. Rewarding calm behavior and taking turns during training teaches pets that waiting patiently leads to good things.
@@ -352,21 +353,21 @@
                 
                 <div class="section">
                     <h2>Pitfalls to Avoid</h2>
-                    <p>In many homes, the most assertive pet tends to receive the most attention. If a dog barks or whines and is instantly picked up or given a treat, that reinforces demanding behavior. Pets who wait quietly may get overlooked, unintentionally encouraging louder behaviors to take over.</p>
+                    <p>In many homes, the most assertive pet tends to receive the most attention. If a dog barks or whines and is instantly picked up or given a treat, that reinforces demanding behavior. Pets who wait quietly may get overlooked, unintentionally encouraging louder behaviors to take over. This cycle of attention imbalance can build resentment between pets and stress for quieter companions. Experts on multi-pet behavior say that building long-term harmony between animals depends on being consistent, not choosing what is easiest at the moment.</p>
                     
                     <div class="warning-box">
                         <h3>⚠️ Common Mistake</h3>
-                        <p>Assuming all pets want the same type of affection. While one dog may enjoy being petted, a cat might prefer space and gentle eye contact. Building bonds begins with understanding each pet's unique "love language."</p>
+                        <p>Another challenge is assuming all pets want the same type of affection. While one dog may enjoy being petted, a cat might prefer space and gentle eye contact. Owners who provide equal but mismatched attention can miss what each pet truly needs. Building bonds begins with understanding love languages, including the quieter ones. Learning to spot how pets express love can guide more thoughtful interactions that honor each animal’s personality.</p>
                     </div>
                 </div>
                 
                 <div class="section">
                     <h2>When to Call in the Professionals</h2>
-                    <p>Rivalry that leads to growling, blocking access to spaces, or withdrawal signals deeper distress. If a pet refuses to eat, avoids others, or begins marking territory, professional guidance may be necessary. Certified behaviorists can observe subtle household patterns and offer behavior plans tailored to a multi-pet environment.</p>
+                    <p>Rivalry that leads to growling, blocking access to spaces, or withdrawal signals deeper distress. If a pet refuses to eat, avoids others, or begins marking territory, professional guidance may be necessary. Certified behaviorists can observe subtle household patterns and offer behavior plans tailored to a multi-pet environment. Escalating tension, even without obvious fights, is a strong reason to reach out for help.</p>
                     
                     <div class="tip-box">
                         <h3>🏥 Medical Check First</h3>
-                        <p>A pet that becomes snappy or avoids touch may be in pain. A vet check is the first step when behavior changes without an environmental trigger. The American Veterinary Society of Animal Behavior offers a national directory of trained experts.</p>
+                        <p>Medical issues also play a role in sudden behavioral shifts. A pet that becomes snappy or avoids touch may be in pain. A vet check is the first step when behavior changes without an environmental trigger. When deeper support is needed, the American Veterinary Society of Animal Behavior offers a national directory of trained experts. The ASPCA also provides resources to help families manage emotional wellness in pets. Bringing in the right help can restore trust, reduce conflict, and make space for every pet to feel safe again.</p>
                     </div>
                 </div>
             </div>
